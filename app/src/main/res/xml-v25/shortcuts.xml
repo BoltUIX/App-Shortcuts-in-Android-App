@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--static shortcut 1-->
+    <shortcut
+        android:shortcutId="compose"
+        android:enabled="true"
+        android:icon="@drawable/chat"
+        android:shortcutShortLabel="@string/shortcutShortLabel"
+        android:shortcutLongLabel="@string/shortcutLongLabel"
+        android:shortcutDisabledMessage="@string/shortcutDisabledMessage">
+        <intent
+            android:action="com.boltuix.appshortcut.action.view_detail_page"
+            android:targetClass="com.boltuix.appshortcut.MainActivity"
+            android:data="jetpack://view_detail_page"
+            android:targetPackage="com.boltuix.appshortcut" />
+    </shortcut>
+
+    <!--static shortcut 2-->
+    <shortcut
+        android:enabled="true"
+        android:icon="@drawable/question"
+        android:shortcutId="animationViewer"
+        android:shortcutShortLabel="@string/shortcutShortLabel2"
+        android:shortcutLongLabel="@string/shortcutLongLabel2"
+        android:shortcutDisabledMessage="@string/shortcutDisabledMessage2"
+
+        >
+        <intent
+            android:action="com.boltuix.appshortcut.MainActivity.VIEWER"
+            android:targetClass="com.boltuix.appshortcut.MainActivity"
+            android:targetPackage="com.boltuix.appshortcut"/>
+    </shortcut>
+</shortcuts>
+
+
+
